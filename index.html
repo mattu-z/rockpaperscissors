@@ -1,1 +1,55 @@
-sda
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rock Paper Scissors</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="doodle-bg" aria-hidden="true">
+    <span class="doodle" style="top:8%;left:6%;">✊</span>
+    <span class="doodle" style="top:15%;left:80%;">✋</span>
+    <span class="doodle" style="top:35%;left:15%;">✌️</span>
+    <span class="doodle" style="top:55%;left:88%;">✊</span>
+    <span class="doodle" style="top:70%;left:10%;">✋</span>
+    <span class="doodle" style="top:85%;left:70%;">✌️</span>
+    <span class="doodle" style="top:25%;left:45%;">✊</span>
+    <span class="doodle" style="top:60%;left:50%;">✋</span>
+    <span class="doodle" style="top:5%;left:40%;">✌️</span>
+    <span class="doodle" style="top:90%;left:30%;">✊</span>
+  </div>
+  <main class="game">
+    <h1>Rock · Paper · Scissors</h1>
+    <section class="arena">
+      <div class="side computer">
+        <h2>Computer</h2>
+        <div class="pick" id="computer-pick">❓</div>
+        <p class="score">Score: <span id="computer-score">0</span></p>
+      </div>
+      <div class="verdict" id="verdict">Make your move!</div>
+      <div class="side player">
+        <h2>You</h2>
+        <div class="pick" id="player-pick">❓</div>
+        <p class="score">Score: <span id="player-score">0</span></p>
+      </div>
+    </section>
+    <div class="choices">
+      <button class="choice" data-choice="rock" aria-label="Rock">
+        <span class="emoji">✊</span>
+        <span class="label">Rock</span>
+      </button>
+      <button class="choice" data-choice="paper" aria-label="Paper">
+        <span class="emoji">✋</span>
+        <span class="label">Paper</span>
+      </button>
+      <button class="choice" data-choice="scissors" aria-label="Scissors">
+        <span class="emoji">✌️</span>
+        <span class="label">Scissors</span>
+      </button>
+    </div>
+    <button class="reset" id="reset">Reset</button>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
